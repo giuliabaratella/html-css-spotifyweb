@@ -162,7 +162,10 @@ main {
     bottom: 0px;
     left: 0px;
 }
-
+#sidebar li:hover {
+    color: var(--color-text-primary);
+    filter: brightness(200%);
+}
 
 /* main content  */
 #main-content {
@@ -174,6 +177,10 @@ main {
 #main-content nav{
     width: 100%;
     font-size: 0.7em;
+}
+
+#main-content nav li:hover a{
+    color: var(--color-text-primary);
 }
 
 #main-content section {
@@ -206,7 +213,36 @@ main {
 }
 #main-content .card figure {
     width: 100%;
+    position: relative;
 }
+.card .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-text-primary);
+    font-size: 4vw;
+    display: none;
+    transition: font-size 0.2s;
+}
+.card figure:hover {
+    cursor: pointer;
+}
+.card figure:hover .play-button {
+    display: block;
+    z-index: 100;
+}
+.card figure:active .play-button {
+    display: block;
+    z-index: 100;
+    font-size: 3.5vw;
+}
+
+.card figure:hover img {
+    filter: brightness(40%);
+}
+
+
 
 /* Sezione artisti popolari  */
 #pop-artists .card figure {

@@ -141,9 +141,13 @@ main {
 
 #sidebar #download {
     font-size: 0.9em;
-    border-bottom: 1px solid var(--color-text-secondary);
-    padding-bottom: 10px;
 }
+
+#sidebar #user-profile {
+    border-top: 1px solid var(--color-text-secondary);
+    padding-top: 10px;
+}
+
 #sidebar #download img{
     width: 70%;
 }
@@ -162,9 +166,9 @@ main {
     bottom: 0px;
     left: 0px;
 }
-#sidebar li:hover {
+#sidebar li:hover, #sidebar-bottom #download:hover {
     color: var(--color-text-primary);
-    filter: brightness(200%);
+    filter: brightness(300%);
 }
 
 /* main content  */

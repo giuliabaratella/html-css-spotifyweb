@@ -21,6 +21,12 @@ body {
 }
 
 /* utility */
+
+img {
+    display: block;
+    width:100%;
+}
+
 /* contenitori */
 .wrapper {
     width: 100%;
@@ -43,6 +49,9 @@ body {
 .text-bold {
     font-weight: bold;
 }
+.text-center {
+    text-align: center;
+}
 
 /* liste e ancore  */
 ul {
@@ -53,6 +62,18 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
+/* divisori  */
+.divider-s {
+    margin-bottom: 10px;
+}
+.divider-m {
+    margin-bottom: 20px;
+}
+.divider-l {
+    margin-bottom: 30px;
+}
+
 
 /* flex  */
 .d-flex {
@@ -66,6 +87,9 @@ a {
 }
 .j-center {
     justify-content: center;
+}
+.j-start {
+    justify-content: flex-start;
 }
 .align-center {
     align-items: center;
@@ -81,6 +105,7 @@ a {
 .column-gap {
     column-gap: 20px;
 }
+
 
 
 
@@ -106,6 +131,37 @@ main {
 #main-content nav{
     width: 100%;
 }
+
+#main-content section {
+    padding: 30px 20px;
+    width: 100%;
+}
+
+#main-content section h2 {
+    font-size: 2vw;
+}
+
+#main-content section h3 {
+    font-size: 1vw;
+}
+
+#main-content section .subtitle{
+    font-weight: 700;
+    font-size: 0.8vw;
+}
+
+/* card */
+#main-content .card {
+    width: calc((100% / 6) - 20px);
+}
+#main-content .card-container {
+    width: 100%;
+}
+#main-content .card figure {
+    width: 100%;
+}
+
+
 
 
 

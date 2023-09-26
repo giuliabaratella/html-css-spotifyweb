@@ -161,6 +161,12 @@ main {
     width: 100%;
 }
 
+/* Sezione artisti popolari  */
+#pop-artists .card figure {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 
 

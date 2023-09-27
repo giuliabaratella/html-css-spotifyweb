@@ -284,8 +284,34 @@ nav li:hover .highlight-x {
     left: 0;
     bottom: 0;
     z-index: 1000;
-    padding: 20px;
+    padding: 20px 10px;
+    font-size: 0.8em;
 }
+#playbar-left .text-secondary:hover, #playbar-right .text-sec-light:hover {
+    color: var(--color-text-primary);
+}
+#playbar-left, #playbar-right {
+    width: 200px;
+}
+#album-played figure {
+    width:40px;
+}
+#album-played figure:hover img {
+    filter: brightness(40%);
+    cursor: pointer;
+}
+#album-played .album-subtitle {
+    font-size: 0.8em;
+}
+#album-played .album-subtitle a:hover {
+    text-decoration: underline;
+}
+
+#volume {
+    accent-color:var(--color-text-secondary-lighter);
+    width: 80px;
+    height: 4px;
+  }
 
 /* call to action  */
 #call-to-action {

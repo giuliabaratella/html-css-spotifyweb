@@ -19,63 +19,90 @@
         </div>
         <main class="d-flex">
             <nav id="sidebar">
-                <h1 class="divider-m">
-                    <img id="logo" src="img/logo.svg" alt="Spotify">
-                </h1>
-                <ul class="divider-l">
-                    <li class="d-flex align-center small-gap divider-s">
-                        <img class="icon" src="img/home.svg" alt="HomeLogo">
-                        <a href="#" class="text-bold text-secondary">Home</a>
-                    </li>
-                    <li class="d-flex align-center small-gap divider-s">
-                        <img class="icon" src="img/search.svg" alt="SearchLogo">
-                        <a href="#" class="text-bold text-secondary">Cerca</a>
-                    </li>
-                    <li class="d-flex align-center small-gap divider-s">
-                        <img class="icon" src="img/libreria.svg" alt="LibraryLogo">
-                        <a href="#" class="text-bold text-secondary">La tua libreria</a>
-                    </li>
-                </ul>
-                <div id="nav-playlist" class="text-bold">
-                    <h4 class="text-primary text-uppercase divider-s">Playlist</h4>
-                    <ul>
-                        <li>
-                            <a href="#" class="row d-flex align-center small-gap divider-s text-secondary">
-                                <div class="add-playlist">
-                                    <i class="fa-solid fa-square-plus"></i>
-                                </div>
-                                <div>Crea Playlist</div>
+                <!-- sidebar top  -->
+                <div id="sidebar-top">
+                    <h1 class="divider-m">
+                        <img id="logo" src="img/logo.svg" alt="Spotify">
+                        <img id="logo-small" src="img/logo-small.svg" alt="Spotify">
+                    </h1>
+                    <!-- sidebar main  -->
+                    <ul class="sidebar-main divider-l">
+                        <li class=" divider-s">
+                            <a href="#" class="d-flex align-center small-gap">
+                                <img class="icon" src="img/home.svg" alt="HomeLogo">
+                                <span class="text-bold text-secondary">
+                                    Home
+                                </span>
                             </a>
                         </li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
-                        <li>
-                            <a class="text-secondary divider-m" href="">Nome Playlist</a></li>
+                        <li class="divider-s">
+                            <a href="#" class="d-flex align-center small-gap">
+                                <img class="icon" src="img/search.svg" alt="SearchLogo">
+                                <span class="text-bold text-secondary">
+                                    Cerca
+                                </span>
+                            </a>
+                        </li>
+                        <li class="divider-s">
+                            <a href="#" class="d-flex align-center small-gap">
+                                <img class="icon" src="img/libreria.svg" alt="SearchLogo">
+                                <span class="text-bold text-secondary">
+                                    La tua libreria
+                                </span>
+                            </a>
+                        </li>
                     </ul>
+
+                    <!-- playlist  -->
+                    <div id="nav-playlist" class="text-bold">
+                        <h4 class="text-primary text-uppercase divider-s">Playlist</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="row d-flex align-center small-gap divider-s text-secondary">
+                                    <div class="add-playlist">
+                                        <i class="fa-solid fa-square-plus"></i>
+                                    </div>
+                                    <div>Crea Playlist</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary divider-m" href="">Nome Playlist</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- sidebar bottom  -->
                 <div id="sidebar-bottom" class="text-bold">
                     <a href="#" id="download" class="text-secondary d-flex align-center small-gap divider-s">
                         <div class="icon">
                             <img src="img/download.svg" alt="Download">
                         </div>
-                        <div>
+                        <span>
                             Installa App
-                        </div>
+                        </span>
                     </a>
                     <div id="user-profile" class="d-flex align-center small-gap" >
                         <figure>
                             <img src="img/profile.svg" alt="User Photo">
                         </figure>
-                        <div class="text-primary">John Doe</div>
+                        <span class="text-primary">John Doe</span>
                     </div>
 
                 </div>

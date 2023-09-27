@@ -91,6 +91,9 @@ a {
 .j-start {
     justify-content: flex-start;
 }
+.j-end {
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
     align-content: center;
@@ -284,9 +287,11 @@ nav li:hover .highlight-x {
     left: 0;
     bottom: 0;
     z-index: 1000;
-    padding: 20px 10px;
+    padding: 10px 10px;
     font-size: 0.8em;
 }
+
+/* playbar left  */
 #playbar-left .text-secondary:hover, #playbar-right .text-sec-light:hover {
     color: var(--color-text-primary);
 }
@@ -307,11 +312,53 @@ nav li:hover .highlight-x {
     text-decoration: underline;
 }
 
+/* playbar main  */
+#playbar-main .play-buttons {
+    height: 25px;
+    width: fit-content;
+    margin: 0 auto ;
+}
+#playbar-main .text-primary:hover {
+    color: var(--color-text-secondary-lighter);
+}
+#playbar-main .play-button, #playbar-main .playb-main-icon {
+    width: 25px;
+}
+#playbar-main .playb-main-icon i {
+    font-size: 1.2em;
+    transition: font-size 0.3s;
+}
+#playbar-main .playb-main-icon i:active {
+    font-size: 1em;
+}
+#playbar-main .play-button i {
+    font-size: 2.2em;
+    transition: font-size 0.3s;
+}
+#playbar-main .play-button i:active {
+    font-size: 1.7em;
+}
+#playbar-main .play-button i:hover {
+    color: var(--color-highlight);
+}
+.song-timing {
+    font-size: 0.7em;
+    padding-top: 10px;
+}
+#song-timing {
+    accent-color: var(--color-text-secondary-lighter);
+    width: 500px;
+    height: 4px;
+    transition: width 0.2s;
+}
+
+/* playbar-right  */
 #volume {
     accent-color:var(--color-text-secondary-lighter);
     width: 80px;
     height: 4px;
-  }
+    transition: width 0.2s;
+}
 
 /* call to action  */
 #call-to-action {
@@ -352,10 +399,22 @@ nav li:hover .highlight-x {
     #main-content .card {
         width: calc((100% / 3) - 20px);
     }
+    #song-timing {
+        width: 350px;
+    }
+    #volume {
+        width: 70px;
+    }
 }
 @media screen and (max-width:768px) {
     #main-content .card {
         width: calc((100% / 2) - 20px);
+    }
+    #song-timing {
+        width: 250px;
+    }
+    #volume {
+        width: 50px;
     }
 }
 @media screen and (max-width:576px) {
@@ -388,11 +447,26 @@ nav li:hover .highlight-x {
     #call-to-action {
         left:50px;
     }
+    #volume {
+        width: 40px;
+    }
+    #song-timing {
+        width: 150px;
+    }
+    #album-icons {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:450px) {
     #main-content .card {
         width: calc(100% - 20px);
+    }
+    #playbar-left, #playbar-right {
+        display: none;
+    }
+    #playbar-main {
+        margin: 0 auto;
     }
 }
 @media screen and (min-width:1200px) {

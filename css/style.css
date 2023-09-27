@@ -199,6 +199,7 @@ nav li:hover .highlight-x {
 #main-content nav{
     width: 100%;
     font-size: 0.7em;
+    padding: 0 10px;
 }
 
 #main-content nav li:hover a{
@@ -305,6 +306,7 @@ nav li:hover .highlight-x {
     right: 25px;
     top: 20px;
     font-size: 0.7em;
+    transition: font-size 0.5s;
 }
 
 #call-to-action .button:hover {
@@ -312,7 +314,7 @@ nav li:hover .highlight-x {
 }
 
 /* media query  */
-@media screen and (max-width:992px) {
+@media screen and (max-width:1200px) {
     #main-content .card-container {
         flex-wrap: wrap;
     }
@@ -320,15 +322,17 @@ nav li:hover .highlight-x {
         width: calc((100% / 4) - 20px);
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
     #main-content .card {
         width: calc((100% / 3) - 20px);
     }
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     #main-content .card {
         width: calc((100% / 2) - 20px);
     }
+}
+@media screen and (max-width:576px) {
     #logo {
         display: none;
     }

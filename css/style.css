@@ -211,6 +211,7 @@ main {
 /* card */
 #main-content .card {
     width: calc((100% / 6) - 20px);
+    padding-bottom: 10px;
 }
 #main-content .card-container {
     width: 100%;
@@ -290,7 +291,30 @@ main {
     font-size: 0.8em;
 }
 
-
+/* media query  */
+@media screen and (max-width:992px) {
+    #main-content .card-container {
+        flex-wrap: wrap;
+    }
+    #main-content .card {
+        width: calc((100% / 4) - 20px);
+    }
+}
+@media screen and (max-width:768px) {
+    #main-content .card {
+        width: calc((100% / 3) - 20px);
+    }
+}
+@media screen and (max-width:576px) {
+    #main-content .card {
+        width: calc((100% / 2) - 20px);
+    }
+}
+@media screen and (max-width:450px) {
+    #main-content .card {
+        width: calc(100% - 20px);
+    }
+}
 @media screen and (min-width:1200px) {
     #call-to-action .button, #main-content nav, #sidebar {
         font-size: 0.8em;

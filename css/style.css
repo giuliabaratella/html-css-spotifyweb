@@ -133,41 +133,73 @@ nav li:hover .highlight-x {
     background-color: var(--color-highlight);
 }
 
+.highlight-y {
+    background-color: transparent;
+    width: 5px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+#sidebar li:hover .highlight-y {
+    background-color: var(--color-highlight);
+}
+
 /* sidebar  */
 #sidebar {
     width: 200px;
     height: 100%;
     background-color: var(--color-sidebar);
-    padding: 20px;
+    padding-top: 20px;
     font-size: 0.7em;
 }
 #logo {
     width: 70%;
+    padding-left: 20px;
 }
 #logo-small {
     display: none;
 }
+
+/* sidebar top  */
+#sidebar-top {
+    height: calc(100% - 80px);
+    min-height: 480px;
+}
+
+/* sidebar main  */
 #sidebar .icon {
     width: 15%;
     filter: invert(44%) sepia(0%) saturate(1674%) hue-rotate(148deg) brightness(98%) contrast(83%);
 }
+/* sidebar playlist  */
 #sidebar .add-playlist {
     font-size: 3em;
+}
+#sidebar #nav-playlist h4 {
+    padding-left: 20px;
+}
+#sidebar #nav-playlist{
+    height: 60%;
+    overflow-y: auto;
+}
+
+/* sidebar bottom  */
+#sidebar-bottom {
+    padding: 10px 20px 0 20px;
+    height: 80px;
+    background-color: var(--color-sidebar);
+    z-index: 100;
 }
 
 #download {
     font-size: 0.9em;
 }
-
+#download img{
+    width: 70%;
+}
 #user-profile {
     border-top: 1px solid var(--color-text-secondary);
     padding-top: 10px;
 }
-
-#download img{
-    width: 70%;
-}
-
 #user-profile figure {
     height: 25px;
     width: 25px;
@@ -175,19 +207,8 @@ nav li:hover .highlight-x {
     background-color: var(--color-text-secondary);
     overflow: hidden;
 }
-#sidebar-top {
-    height: calc(100% - 80px);
-    min-height: 480px;
-}
-#sidebar-bottom {
-    padding: 10px 20px;
-    height: 80px;
-}
-#sidebar .nav-playlist ul{
-    overflow-y: auto;
-}
 
-#sidebar li:hover, #download:hover {
+#sidebar li a:hover, #download:hover {
     color: var(--color-text-primary);
     filter: brightness(300%);
 }
@@ -351,6 +372,9 @@ nav li:hover .highlight-x {
     height: 4px;
     transition: width 0.2s;
 }
+#song-timing:active {
+    accent-color: var(--color-highlight);
+}
 
 /* playbar-right  */
 #volume {
@@ -358,6 +382,9 @@ nav li:hover .highlight-x {
     width: 80px;
     height: 4px;
     transition: width 0.2s;
+}
+#volume:active {
+    accent-color: var(--color-highlight);
 }
 
 /* call to action  */

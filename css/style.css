@@ -421,6 +421,12 @@ nav li:hover .highlight-x {
     #main-content .card {
         width: calc((100% / 4) - 20px);
     }
+    .card .play-button {
+        font-size: 5vw;
+    }
+    .card figure:active .play-button {
+        font-size: 4vw;
+    }
 }
 @media screen and (max-width:992px) {
     #main-content .card {
@@ -432,6 +438,12 @@ nav li:hover .highlight-x {
     #volume {
         width: 70px;
     }
+    .card .play-button {
+        font-size: 6.5vw;
+    }
+    .card figure:active .play-button {
+        font-size: 5vw;
+    }
 }
 @media screen and (max-width:768px) {
     #main-content .card {
@@ -442,6 +454,12 @@ nav li:hover .highlight-x {
     }
     #volume {
         width: 50px;
+    }
+    .card .play-button {
+        font-size: 9vw;
+    }
+    .card figure:active .play-button {
+        font-size: 7.5vw;
     }
 }
 @media screen and (max-width:576px) {
@@ -483,6 +501,15 @@ nav li:hover .highlight-x {
     #album-icons {
         flex-direction: column;
     }
+    .highlight-y {
+        display: none;
+    }
+    .card .play-button {
+        font-size: 11vw;
+    }
+    .card figure:active .play-button {
+        font-size: 9vw;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -494,6 +521,12 @@ nav li:hover .highlight-x {
     }
     #playbar-main {
         margin: 0 auto;
+    }
+    .card .play-button {
+        font-size: 20vw;
+    }
+    .card figure:active .play-button {
+        font-size: 15vw;
     }
 }
 @media screen and (min-width:1200px) {

@@ -212,19 +212,19 @@ nav li:hover .highlight-x {
 }
 
 #main-content section h2 {
-    font-size: 1.6vw;
+    font-size: 1.5em;
 }
 
 #main-content section h3 {
-    font-size: 1vw;
+    font-size: 0.7em;
 }
 
 #main-content .card .subtitle{
     font-weight: 700;
-    font-size: 0.8vw;
+    font-size: 0.7em;
 }
 #main-content .section-subtitle {
-    font-size: 0.8vw;
+    font-size: 0.7em;
 }
 
 /* card */
@@ -363,6 +363,7 @@ nav li:hover .highlight-x {
         left:50px;
     }
 }
+
 @media screen and (max-width:450px) {
     #main-content .card {
         width: calc(100% - 20px);

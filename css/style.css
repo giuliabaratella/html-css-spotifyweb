@@ -102,6 +102,10 @@ a {
     align-items: flex-start;
     align-content: flex-start;
 }
+.align-end {
+    align-items: flex-end;
+    align-content: flex-end;
+}
 .wrap {
     flex-flow: row wrap;
 }
@@ -412,6 +416,58 @@ nav li:hover .highlight-x {
 #call-to-action .button:hover {
     font-size: 0.8em;
 }
+
+/* Playlists */
+/* Daily Mix 1 */
+#daily-mix-1 #main-content{
+    padding: 0;
+}
+
+/* hero  */
+#daily-mix-1 #main-content {
+    background: linear-gradient(180deg, #DF421A 0%, #92223F 27.85%, rgba(0, 0, 0, 0.00) 66.01%);
+}
+
+#hero-main {
+    padding:100px 20px 20px 20px;
+    font-size: 0.9em;
+}
+#hero-main figure {
+    width: 250px;
+    box-shadow:5px 2px 28px 15px rgba(0,0,0,0.2);
+    transition: filter 0.5s;
+}
+#hero-main figure:hover{
+    filter: brightness(60%);
+}
+#hero-text h2 {
+    font-size: 6em;
+}
+#hero-text i {
+    color: var(--color-highlight);
+}
+#hero-text a:hover {
+    text-decoration: underline;
+}
+#choose-playlist {
+    padding-left: 20px;
+    font-size: 2.5em;
+}
+#choose-playlist a {
+    color: var(--color-footer);
+    width: 40px;
+    transition: all 0.1s;
+}
+#choose-playlist a:hover {
+    color: var(--color-text-secondary-lighter);
+}
+#choose-playlist a:active {
+    font-size: 0.9em;
+    color: var(--color-text-primary);
+}
+
+
+
 
 /* media query  */
 @media screen and (max-width:1200px) {

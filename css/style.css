@@ -49,6 +49,9 @@ img {
 .text-bold {
     font-weight: bold;
 }
+.text-regular {
+    font-weight: normal;
+}
 .text-center {
     text-align: center;
 }
@@ -439,6 +442,7 @@ nav li:hover .highlight-x {
 }
 #hero-main figure:hover{
     filter: brightness(60%);
+    cursor: pointer;
 }
 #hero-text h2 {
     font-size: 6em;
@@ -465,6 +469,155 @@ nav li:hover .highlight-x {
     font-size: 0.9em;
     color: var(--color-text-primary);
 }
+
+/* lista canzoni  */
+.album-song-list {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* icone  */
+.album-icons {
+    font-size: 2em;
+    height: 60px;
+}
+.album-icons .play-button {
+    color: var(--color-highlight);
+    width: 60px;
+}
+.album-icons .play-button i {
+    font-size: 1.8em;
+    transition: font-size 0.2s;
+}
+.album-icons .play-button:hover i{
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.album-icons .play-button:active i{
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.album-icons a:hover {
+    color: var(--color-text-primary);
+}
+
+/* lista  */
+.album-recap {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-text-secondary-lighter);
+}
+.recap-left, .song-cover {
+    width: 50%;
+}
+.recap-middle, .album-name {
+    width: 49%;
+}
+
+/* song card  */
+.song-card {
+    padding: 10px;
+}
+.song-number, .song-number-play, .recap-left span:first-child {
+    width: 2%;
+}
+.song-number-play {
+    display: none;
+}
+.playing {
+    display: none;
+}
+
+.song-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: var(--color-text-primary);
+}
+.song-card:hover a {
+    color: var(--color-text-primary);
+}
+.song-card a:hover {
+    text-decoration: underline;
+}
+.song-card:hover .song-number {
+    display: none;
+}
+.song-card:hover .song-number-play {
+    display: block;
+}
+.song-number-play:hover {
+    cursor: pointer;
+}
+.song-number-play:active i{
+    display:none;
+}
+/* .song-number-play:active audio{
+
+} */
+.song-number-play:active .playing{
+    display:flex;
+}
+.song-number-play:active audio{
+   display: block;
+}
+.song-cover figure {
+    width: 50px;
+}
+.song-cover .author-name {
+    font-size: 0.8em;
+}
+/* animazione musica  */
+.playing {
+    width: 1rem;
+    height: 1rem;
+    border-radius: .3rem;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+  
+  .playing__bar {
+    display: inline-block;
+    background: var(--color-highlight);
+    width: 30%;
+    height: 100%;
+    animation: up-and-down 1.3s ease infinite alternate;
+  }
+  
+  .playing__bar1 {
+    height: 60%;
+  }
+  
+  .playing__bar2 {
+    height: 30%;
+    animation-delay: -2.2s;
+  }
+  
+  .playing__bar3 {
+    height: 75%;
+    animation-delay: -3.7s;
+  }
+  
+  @keyframes up-and-down {
+    10% {
+      height: 30%;
+    }
+    
+    30% {
+      height: 100%;
+    }
+    
+    60% {
+      height: 50%;
+    }
+    
+    80% {
+      height: 75%;
+    }
+    
+    100% {
+      height: 60%;
+    }
+  }
 
 
 

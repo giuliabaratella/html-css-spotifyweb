@@ -140,15 +140,6 @@ nav li:hover .highlight-x {
     background-color: var(--color-highlight);
 }
 
-.highlight-y {
-    background-color: transparent;
-    width: 5px;
-    border-radius: 2px;
-    margin-right: 20px;
-}
-#sidebar li:hover .highlight-y {
-    background-color: var(--color-highlight);
-}
 
 /* sidebar  */
 #sidebar {
@@ -166,10 +157,20 @@ nav li:hover .highlight-x {
     display: none;
 }
 
+.highlight-y {
+    background-color: transparent;
+    width: 5px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+#sidebar li:hover .highlight-y {
+    background-color: var(--color-highlight);
+}
+
 /* sidebar top  */
 #sidebar-top {
     height: calc(100% - 80px);
-    min-height: 480px;
+    overflow-y: hidden;
 }
 
 /* sidebar main  */
@@ -178,14 +179,17 @@ nav li:hover .highlight-x {
     filter: invert(44%) sepia(0%) saturate(1674%) hue-rotate(148deg) brightness(98%) contrast(83%);
 }
 /* sidebar playlist  */
-#sidebar .add-playlist {
+#sidebar .add-playlist-button {
     font-size: 3em;
+}
+#sidebar .add-playlist:hover .highlight-y{
+    background-color: var(--color-highlight);
 }
 #sidebar #nav-playlist h4 {
     padding-left: 20px;
 }
-#sidebar #nav-playlist{
-    height: 60%;
+#sidebar #nav-playlist ul{
+    max-height: 400px;
     overflow-y: auto;
 }
 
@@ -194,7 +198,6 @@ nav li:hover .highlight-x {
     padding: 10px 20px 0 20px;
     height: 80px;
     background-color: var(--color-sidebar);
-    z-index: 100;
 }
 
 #download {
@@ -756,7 +759,10 @@ nav li:hover .highlight-x {
 }
 
 @media screen and (max-height:300px) {
-    #call-to-action {
+    #call-to-action, #sidebar-bottom {
         display: none;
+    }
+    #sidebar-top {
+        height: 100%;
     }
 }

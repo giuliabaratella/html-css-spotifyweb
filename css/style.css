@@ -513,9 +513,11 @@ nav li:hover .highlight-x {
 }
 .recap-left, .song-cover {
     width: 50%;
+    transition: width 0.3s;
 }
 .recap-middle, .album-name {
     width: 49%;
+    transition: width 0.3s;
 }
 
 /* song card  */
@@ -659,6 +661,19 @@ nav li:hover .highlight-x {
     .card figure:active .play-button {
         font-size: 5vw;
     }
+    #daily-mix-1 #hero-text {
+        max-width: 50%;
+    }
+    #daily-mix-1 #hero-text h2 {
+        font-size: 4em;
+    }
+    .recap-left, .song-cover {
+        width: 60%;
+    }
+    .recap-middle, .album-name {
+        width: 38%;
+    }
+
 }
 @media screen and (max-width:768px) {
     #main-content .card {
@@ -681,6 +696,27 @@ nav li:hover .highlight-x {
     }
     #album-icons {
         flex-direction: column;
+    }
+    #daily-mix-1 #hero-main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #daily-mix-1 #hero-text {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #daily-mix-1 #hero-main figure {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .album-recap .recap-middle, .song-card .album-name {
+        display: none;
+    }
+    .album-recap, .song-card {
+        justify-content: space-between;
+    }
+    .recap-left, .song-cover {
+        width: 85%;
     }
 }
 @media screen and (max-width:576px) {

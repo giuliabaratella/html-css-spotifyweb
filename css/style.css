@@ -533,7 +533,6 @@ nav li:hover .highlight-x {
 .playing {
     display: none;
 }
-
 .song-card:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -545,26 +544,20 @@ nav li:hover .highlight-x {
 .song-card a:hover {
     text-decoration: underline;
 }
-.song-card:hover .song-number {
-    display: none;
-}
-.song-card:hover .song-number-play {
-    display: block;
-}
 .song-number-play:hover {
     cursor: pointer;
 }
-.song-number-play:active i{
-    display:none;
+.song-card:hover{
+    cursor: pointer;
 }
-/* .song-number-play:active audio{
-
-} */
-.song-number-play:active .playing{
+.song-card:active .song-number {
+    display: none;
+}
+.song-card:active .song-number-play {
+    display: block;
+}
+.song-card:active .playing{
     display:flex;
-}
-.song-number-play:active audio{
-   display: block;
 }
 .song-cover figure {
     width: 50px;
@@ -572,6 +565,27 @@ nav li:hover .highlight-x {
 .song-cover .author-name {
     font-size: 0.8em;
 }
+.song-cover {
+    position: relative;
+}
+.song-cover audio {
+    visibility:hidden;
+    position: absolute;
+    left: 33px;
+    top: -2px;
+}
+.song-cover audio::-webkit-media-controls-play-button {
+    display: block;
+    visibility: hidden;
+    filter: invert(1);
+    transform: scale(1.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+}
+.song-card:hover .song-cover audio::-webkit-media-controls-play-button {
+    visibility: visible;
+}
+
 /* animazione musica  */
 .playing {
     width: 1rem;

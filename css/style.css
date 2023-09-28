@@ -189,8 +189,11 @@ nav li:hover .highlight-x {
     padding-left: 20px;
 }
 #sidebar #nav-playlist ul{
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
+}
+#sidebar #nav-playlist li{
+    margin-bottom: 15px;
 }
 
 /* sidebar bottom  */
@@ -327,7 +330,7 @@ nav li:hover .highlight-x {
     color: var(--color-text-primary);
 }
 #playbar-left, #playbar-right {
-    width: 200px;
+    max-width: 200px;
 }
 #album-played figure {
     width:40px;
@@ -673,6 +676,12 @@ nav li:hover .highlight-x {
     .card figure:active .play-button {
         font-size: 7.5vw;
     }
+    #playbar-right .option-screen {
+        flex-direction: column;
+    }
+    #album-icons {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:576px) {
     #logo {
@@ -705,13 +714,10 @@ nav li:hover .highlight-x {
         left:50px;
     }
     #volume {
-        width: 40px;
+        display: none;
     }
     #song-timing {
         width: 150px;
-    }
-    #album-icons {
-        flex-direction: column;
     }
     .highlight-y {
         display: none;
@@ -721,6 +727,9 @@ nav li:hover .highlight-x {
     }
     .card figure:active .play-button {
         font-size: 9vw;
+    }
+    .album-text {
+        display: none;
     }
 }
 
